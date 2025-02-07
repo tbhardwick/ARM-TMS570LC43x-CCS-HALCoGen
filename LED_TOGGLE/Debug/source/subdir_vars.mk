@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 CMD_SRCS += \
 ../source/HL_sys_link.cmd 
@@ -15,6 +17,7 @@ ASM_SRCS += \
 C_SRCS += \
 ../source/HL_epc.c \
 ../source/HL_errata.c \
+../source/HL_errata_SSWF021_45.c \
 ../source/HL_esm.c \
 ../source/HL_gio.c \
 ../source/HL_nmpu.c \
@@ -29,9 +32,28 @@ C_SRCS += \
 ../source/HL_sys_vim.c \
 ../source/HL_system.c 
 
+C_DEPS += \
+./source/HL_epc.d \
+./source/HL_errata.d \
+./source/HL_errata_SSWF021_45.d \
+./source/HL_esm.d \
+./source/HL_gio.d \
+./source/HL_nmpu.d \
+./source/HL_notification.d \
+./source/HL_pinmux.d \
+./source/HL_sys_dma.d \
+./source/HL_sys_main.d \
+./source/HL_sys_pcr.d \
+./source/HL_sys_phantom.d \
+./source/HL_sys_pmm.d \
+./source/HL_sys_startup.d \
+./source/HL_sys_vim.d \
+./source/HL_system.d 
+
 OBJS += \
 ./source/HL_epc.obj \
 ./source/HL_errata.obj \
+./source/HL_errata_SSWF021_45.obj \
 ./source/HL_esm.obj \
 ./source/HL_gio.obj \
 ./source/HL_nmpu.obj \
@@ -56,43 +78,10 @@ ASM_DEPS += \
 ./source/HL_sys_mpu.d \
 ./source/HL_sys_pmu.d 
 
-C_DEPS += \
-./source/HL_epc.d \
-./source/HL_errata.d \
-./source/HL_esm.d \
-./source/HL_gio.d \
-./source/HL_nmpu.d \
-./source/HL_notification.d \
-./source/HL_pinmux.d \
-./source/HL_sys_dma.d \
-./source/HL_sys_main.d \
-./source/HL_sys_pcr.d \
-./source/HL_sys_phantom.d \
-./source/HL_sys_pmm.d \
-./source/HL_sys_startup.d \
-./source/HL_sys_vim.d \
-./source/HL_system.d 
-
-C_DEPS__QUOTED += \
-"source\HL_epc.d" \
-"source\HL_errata.d" \
-"source\HL_esm.d" \
-"source\HL_gio.d" \
-"source\HL_nmpu.d" \
-"source\HL_notification.d" \
-"source\HL_pinmux.d" \
-"source\HL_sys_dma.d" \
-"source\HL_sys_main.d" \
-"source\HL_sys_pcr.d" \
-"source\HL_sys_phantom.d" \
-"source\HL_sys_pmm.d" \
-"source\HL_sys_startup.d" \
-"source\HL_sys_vim.d" \
-"source\HL_system.d" 
-
 OBJS__QUOTED += \
 "source\HL_epc.obj" \
 "source\HL_errata.obj" \
+"source\HL_errata_SSWF021_45.obj" \
 "source\HL_esm.obj" \
 "source\HL_gio.obj" \
 "source\HL_nmpu.obj" \
@@ -111,6 +100,24 @@ OBJS__QUOTED += \
 "source\HL_sys_vim.obj" \
 "source\HL_system.obj" 
 
+C_DEPS__QUOTED += \
+"source\HL_epc.d" \
+"source\HL_errata.d" \
+"source\HL_errata_SSWF021_45.d" \
+"source\HL_esm.d" \
+"source\HL_gio.d" \
+"source\HL_nmpu.d" \
+"source\HL_notification.d" \
+"source\HL_pinmux.d" \
+"source\HL_sys_dma.d" \
+"source\HL_sys_main.d" \
+"source\HL_sys_pcr.d" \
+"source\HL_sys_phantom.d" \
+"source\HL_sys_pmm.d" \
+"source\HL_sys_startup.d" \
+"source\HL_sys_vim.d" \
+"source\HL_system.d" 
+
 ASM_DEPS__QUOTED += \
 "source\HL_sys_core.d" \
 "source\HL_sys_intvecs.d" \
@@ -120,6 +127,7 @@ ASM_DEPS__QUOTED += \
 C_SRCS__QUOTED += \
 "../source/HL_epc.c" \
 "../source/HL_errata.c" \
+"../source/HL_errata_SSWF021_45.c" \
 "../source/HL_esm.c" \
 "../source/HL_gio.c" \
 "../source/HL_nmpu.c" \

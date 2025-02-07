@@ -1,14 +1,14 @@
 /** @file HL_sys_main.c 
 *   @brief Application main file
-*   @date 28.Aug.2015
-*   @version 04.05.01
+*   @date 11-Dec-2018
+*   @version 04.07.01
 *
 *   This file contains an empty main function,
 *   which can be used for the application.
 */
 
 /* 
-* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2018 Texas Instruments Incorporated - www.ti.com  
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -66,7 +66,7 @@
 /* USER CODE BEGIN (2) */
 /* USER CODE END */
 
-void main(void)
+int main(void)
 {
 /* USER CODE BEGIN (3) */
 	giobDIR = 0xFF;
@@ -81,7 +81,10 @@ void main(void)
 		for (i=0; i<27272727; i++);
 	}
 /* USER CODE END */
+
+    return 0;
 }
+
 
 /* USER CODE BEGIN (4) */
 /* USER CODE END */
