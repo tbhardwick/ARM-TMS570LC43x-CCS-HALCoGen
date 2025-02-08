@@ -19,4 +19,4 @@
 "./source/HL_sys_vim.obj"
 "./source/HL_system.obj"
 "../source/HL_sys_link.cmd"
--llibc.a
+-l"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib/libc.a"

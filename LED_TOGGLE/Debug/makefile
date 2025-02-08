@@ -32,7 +32,7 @@ ORDERED_OBJS += \
 "./source/HL_system.obj" \
 "../source/HL_sys_link.cmd" \
 $(GEN_CMDS__FLAG) \
--llibc.a \
+-l"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib/libc.a" \
 
 -include ../makefile.init
 

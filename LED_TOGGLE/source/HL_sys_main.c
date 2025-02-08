@@ -1,14 +1,14 @@
 /** @file HL_sys_main.c 
 *   @brief Application main file
-*   @date 11-Dec-2018
-*   @version 04.07.01
+*   @date 28.Aug.2015
+*   @version 04.05.01
 *
 *   This file contains an empty main function,
 *   which can be used for the application.
 */
 
 /* 
-* Copyright (C) 2009-2018 Texas Instruments Incorporated - www.ti.com  
+* Copyright (C) 2009-2015 Texas Instruments Incorporated - www.ti.com
 * 
 * 
 *  Redistribution and use in source and binary forms, with or without 
@@ -51,8 +51,8 @@
 #include "HL_sys_common.h"
 
 /* USER CODE BEGIN (1) */
-	uint32_t i;													// Create a 32 bit integer variable for counting cycles
-	uint8_t giobDIR;											// Create a 8 bit integer variable for GIO PORTB direction
+    uint32_t i;                                                 // Create a 32 bit integer variable for counting cycles
+    uint8_t giobDIR;                                            // Create a 8 bit integer variable for GIO PORTB direction
 /* USER CODE END */
 
 /** @fn void main(void)
@@ -66,25 +66,22 @@
 /* USER CODE BEGIN (2) */
 /* USER CODE END */
 
-int main(void)
+void main(void)
 {
 /* USER CODE BEGIN (3) */
-	giobDIR = 0xFF;
-	gioInit();													// Initialize the GIO module
-	gioSetDirection(gioPORTB, giobDIR);							// Set GIOB port pin direction to all output
-	while(1){													// Start an infinite loop
-		gioSetBit(gioPORTB, 6, 1);								// Set the GIOB6 pin
-		gioSetBit(gioPORTB, 7, 0);								// Clear the GIOB7 pin
-		for (i=0; i<27272727; i++);								// The For loop takes 11 MC, hence 300M/11 = 27272727 MC for 1 sec
-		gioSetBit(gioPORTB, 6, 0);								// Clear the GIOB6 pin
-		gioSetBit(gioPORTB, 7, 1);								// Set the GIOB7 pin
-		for (i=0; i<27272727; i++);
-	}
+    giobDIR = 0xFF;
+    gioInit();                                                  // Initialize the GIO module
+    gioSetDirection(gioPORTB, giobDIR);                         // Set GIOB port pin direction to all output
+    while(1){                                                   // Start an infinite loop
+        gioSetBit(gioPORTB, 6, 1);                              // Set the GIOB6 pin
+        gioSetBit(gioPORTB, 7, 0);                              // Clear the GIOB7 pin
+        for (i=0; i<27272727; i++);                             // The For loop takes 11 MC, hence 300M/11 = 27272727 MC for 1 sec
+        gioSetBit(gioPORTB, 6, 0);                              // Clear the GIOB6 pin
+        gioSetBit(gioPORTB, 7, 1);                              // Set the GIOB7 pin
+        for (i=0; i<27272727; i++);
+    }
 /* USER CODE END */
-
-    return 0;
 }
-
 
 /* USER CODE BEGIN (4) */
 /* USER CODE END */
